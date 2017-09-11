@@ -6,7 +6,7 @@
     "node": "6.11.2"
   },
   "scripts": {
-    "server-start": "ng build && node server.js",
+    "start": "ng build && node server.js",
     "server-test": "mocha -c 'server/**/*.test.js'",
     "angular-ng": "ng",
     "angular-build": "ng build",
