@@ -7,14 +7,14 @@
   },
   "scripts": {
     "start": "node server.js",
-    "postinstall": "ng build",
     "build^start": "ng build && node server.js",
     "server-test": "mocha -c 'server/**/*.test.js'",
     "angular-ng": "ng",
     "angular-build": "ng build",
     "angular-test": "ng test",
     "angular-lint": "ng lint",
-    "angular-e2e": "ng e2e"
+    "angular-e2e": "ng e2e",
+    "postinstall": "ng build"
   },
   "private": true,
   "dependencies": {
