@@ -1,10 +1,8 @@
 import { NotFoundComponent } from '../components/notfound/notfound.component'
 
 import { Routes } from '@angular/router';
-import { UserRoutes } from './user.routes'
+import { UserRoutes } from './user.routes';
 
-var routes: Routes = []
-
-export const AppRoutes: Routes = routes.concat(UserRoutes,[
+export const AppRoutes: Routes = [].concat(UserRoutes, [
     { path: '**', component:  NotFoundComponent }
-])
+]);

@@ -10,10 +10,9 @@ import { UsersComponent } from './components/users/users.component';
 import { NotFoundComponent } from './components/notfound/notfound.component';
 import { HomeComponent } from './components/home/home.component';
 
-//Routes
-//import { AppRoutes } from './routes/app.routes';
 
-let routes = [
+//Routes
+const routes = [
   {
     path: '',
     component: HomeComponent
@@ -23,7 +22,7 @@ let routes = [
     component: UsersComponent
   },
   { path: '**', component:  NotFoundComponent }
-]
+];
 
 @NgModule({
   declarations: [
@@ -41,5 +40,4 @@ let routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-}
+export class AppModule {}
